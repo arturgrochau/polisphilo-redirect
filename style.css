@@ -340,7 +340,13 @@ details p{color:var(--muted); margin:0 0 15px}
 }
 
 /* the blue/red arc from the logo, drawn in CSS behind the mark */
-.arc{position:absolute; left:50%; top:0; width:min(760px,92vw); aspect-ratio:1; translate:-50% -34%; pointer-events:none; z-index:-1; opacity:.5}
+.arc{
+  position:absolute; left:50%; top:0; width:min(760px,92vw); aspect-ratio:1; translate:-50% -34%;
+  pointer-events:none; z-index:-1; opacity:.5;
+  /* fade the lower sweep so the curve stops before it crosses the tagline */
+  -webkit-mask-image:linear-gradient(to bottom,#000 50%,transparent 74%);
+  mask-image:linear-gradient(to bottom,#000 50%,transparent 74%);
+}
 .arc::before,.arc::after{
   content:""; position:absolute; inset:0; border-radius:50%; border:1px solid transparent;
 }
