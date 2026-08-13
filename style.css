@@ -1,4 +1,4 @@
-/* Politics & Philosophy — polisphilo.com */
+/* Politics & Philosophy, polisphilo.com */
 
 :root{
   --bg:#080b18; --bg2:#0b0e1a; --panel:#121734; --panel2:#0e1329; --ink:#e9ecf5; --muted:#a6adc8;
@@ -320,7 +320,7 @@ details p{color:var(--muted); margin:0 0 15px}
   .ticker-track{animation:none}
 }
 /* ============================================================
-   BRAND LAYER — polisphilo.com
+   BRAND LAYER: polisphilo.com
    The entity node. Appended to the shared base stylesheet.
    Uses both halves of the mark, blue and red, symmetrically.
    ============================================================ */
